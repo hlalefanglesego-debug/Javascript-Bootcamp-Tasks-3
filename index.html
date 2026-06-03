@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup Portal</title>
+  
+   
+</head>
+<body>
+
+    <h2>Signup Portal</h2>
+
+    <form id="signupForm">
+        <input type="text" id="username" placeholder="Username">
+        <span id="usernameError" class="error"></span>
+        <br><br>
+
+        <input type="email" id="email" placeholder="Email">
+        <span id="emailError" class="error"></span>
+        <br><br>
+
+        <input type="password" id="password" placeholder="Password">
+        <span id="passwordError" class="error"></span>
+        <br><br>
+
+        <label>
+            <input type="checkbox" id="terms">
+            Accept Terms and Conditions
+        </label>
+        <span id="termsError" class="error"></span>
+        <br><br>
+
+        <button type="submit">Sign Up</button>
+    </form>
+
+    <br>
+
+    <button id="resendBtn" disabled>
+        Resend Verification (10)
+    </button>
+
+    <script src="validation.js"></script>
+    <script src="async.js"></script>
+
+</body>
+</html>
